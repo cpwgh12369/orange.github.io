@@ -1,17 +1,210 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" />
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<link rel="stylesheet" type="text/css" href="css/media.css" />
-		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
-		
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snowman</title>
+	<style>
+		/* 欢迎关注Sophia-webdev:https://space.bilibili.com/1468907420?spm_id_from=333.1007.0.0 */
+body {
+    background-color: green;
+    margin: 0;
+    padding:0;
+
+}
+
+.mycanvas {
+   height: 510px;
+   width:350px;
+   position:absolute;
+   margin: auto;
+   left:0;
+   right:0;
+   bottom:0;
+}
+.snowman {
+    position: relative;
+    left:5px;
+    top:53px;
+}
+.face {
+    background-color: white;
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    position: relative;
+    top:100px;
+    left:110px;
+}
+.eyel,.eyer {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+
+}
+.eyel {
+    top:40px;
+    left:35px;
+}
+.eyer{
+    top:25px;
+    left:75px;
+}
+.nose{
+    height: 0;
+    width: 0;
+    border-top: 30px solid #f7880f;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: relative;
+    top:35px;
+    left:57px;
+
+}
+.hat {
+    background-color: #2b303a;
+    height: 10px;
+    width: 120px;
+    position: relative;
+    bottom: 50px;
+    left:15px;
+    border-radius: 4px;
+    transform: rotate(20deg);
+}
+.htop {
+    height: 0;
+    width: 60px;
+    border-bottom: 43px solid #2b303a;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: relative;
+    bottom: 42px;
+    left:22px;
+}
+.body {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 50%;
+    top:90px;
+    left:70px;
+}
+.buttons {
+    position: relative;
+    top:60px;
+    left: 90px;
+}
+.b1,.b2,.b3 {
+    height: 15px;
+    width: 15px;
+    background-color: #2b303a;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.handl {
+    background-color: #84382a;
+    height: 5px;
+    width: 100px;
+    position: relative;
+    bottom: 68px;
+    transform: rotate(25deg);
+    right:67px;
+}
+.s1{
+    background-color: #84382a;
+    height: 5px;
+    width: 30px;
+    position: relative;
+    bottom: 10px;
+    transform: rotate(45deg);
+    right:5px;
+}
+
+.handr {
+    background-color: #84382a;
+    height: 5px;
+    width: 100px;
+    position: relative;
+    bottom: 73px;
+    transform: rotate(-25deg);
+    left: 168px;
+}
+.s2{
+    background-color: #84382a;
+    height: 5px;
+    width: 30px;
+    position: relative;
+    bottom: 10px;
+    transform: rotate(-45deg);
+    left: 65px;
+}
+.scarf {
+    height:0;
+    width: 20px;
+    border-bottom: 50px solid red;
+    border-left: 8px solid transparent;
+    position: relative;
+    bottom: 90px;
+    left:195px;
+    transform: rotate(-15deg);
+}
+.sc1 {
+    background-color: red;
+    height: 35px;
+    width: 120px;
+    position: relative;
+    bottom: 35px;
+    right: 85px;
+    border-radius: 10px;
+    transform: rotate(15deg);
+}
+
+.sc2 {
+    height: 0px;
+    width: 20px;
+    border-bottom: 70px solid red;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: relative;
+    right:25px;
+    bottom: 45px;
+}
+	</style>
+</head>
+<body>
+    <div class="mycanvas">
+        <div class="snowman">
+            <div class="face">
+                <div class="eyel"></div>
+                <div class="eyer"></div>
+                <div class="nose"></div>
+                <div class="hat">
+                    <div class="htop"></div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="buttons">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                </div>
+                <div class="handl">
+                    <div class="s1"></div>
+                </div>
+                <div class="handr">
+                    <div class="s2"></div>
+                </div>
+            </div>
+            <div class="scarf">
+                <div class="sc1"></div>
+                <div class="sc2"></div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

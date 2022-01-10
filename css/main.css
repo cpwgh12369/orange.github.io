@@ -168,11 +168,12 @@ a:hover {
   background: radial-gradient(ellipse at bottom, #b8cee7 0%, #f0f1f8 100%);
 }
 
-.tree-box{
+.tree-box {
   position: fixed;
   right: 10%;
   bottom: 3%;
 }
+
 .tree {
   width: 200px;
   height: 300px;
@@ -190,7 +191,10 @@ a:hover {
   z-index: 100;
   left: 50%;
   transform: translateX(-50%);
-  animation: startTree 1.5s ease infinite alternate;
+  animation: startTree 3.5s ease infinite alternate;
+}
+.star:hover{
+  animation-play-state: paused;
 }
 
 .star-in {
@@ -231,6 +235,7 @@ a:hover {
         gold 0%, rgba(255, 240, 158, 0.5) 45%,
         rgba(255, 242, 173, 0.2) 63%,
         rgba(255, 255, 255, 0.1) 100%);
+    transform: translateX(-50%) rotate(0deg);
   }
 
   25% {
@@ -238,6 +243,8 @@ a:hover {
         gold 0%, rgba(255, 240, 158, 0.5) 43%,
         rgba(255, 242, 173, 0.2) 65%,
         rgba(255, 255, 255, 0.1) 100%);
+    transform: translateX(-50%) rotate(180deg);
+
   }
 
   50% {
@@ -245,6 +252,8 @@ a:hover {
         gold 0%, rgba(255, 240, 158, 0.5) 41%,
         rgba(255, 242, 173, 0.2) 67%,
         rgba(255, 255, 255, 0.1) 100%);
+    transform: translateX(-50%) rotate(360deg);
+
   }
 
   75% {
@@ -252,6 +261,8 @@ a:hover {
         gold 0%, rgba(255, 240, 158, 0.5) 39%,
         rgba(255, 242, 173, 0.2) 69%,
         rgba(255, 255, 255, 0.1) 100%);
+    transform: translateX(-50%) rotate(180deg);
+
   }
 
   100% {
@@ -259,6 +270,7 @@ a:hover {
         gold 0%, rgba(255, 240, 158, 0.5) 37%,
         rgba(255, 242, 173, 0.2) 71%,
         rgba(255, 255, 255, 0.1) 100%);
+    transform: translateX(-50%) rotate(0deg);
   }
 }
 
@@ -359,51 +371,67 @@ a:hover {
   z-index: 101;
   position: absolute;
 }
-.b1{
+
+.b1 {
   left: 25%;
   top: 30%;
 }
-.b2{
+
+.b2 {
   left: 35%;
   top: 50%;
 }
-.b3{
+
+.b3 {
   left: 65%;
   top: 20%;
 }
-.b4{
+
+.b4 {
   left: 45%;
   top: 22%;
 }
-.b5{
+
+.b5 {
   left: 40%;
   top: 72%;
 }
-.b6{
+
+.b6 {
   left: 60%;
   top: 52%;
 }
-.b7{
+
+.b7 {
   left: 50%;
   top: 62%;
 }
-.b8{
+
+.b8 {
   left: 80%;
   top: 42%;
 }
-.b9{
+
+.b9 {
   left: 10%;
   top: 62%;
 }
-.b4,.b5,.b6{
+
+.b4,
+.b5,
+.b6 {
   background: #ececec;
-  box-shadow: inset -1px -1px 6px #615f5f,inset 1px 1px 8px #fff;
+  box-shadow: inset -1px -1px 6px #615f5f, inset 1px 1px 8px #fff;
 }
-.b7,.b8,.b9{
+
+.b7,
+.b8,
+.b9 {
   background: gold;
-  box-shadow: inset -1px -1px 6px #3a3101,inset 1px 1px 8px #fff;
+  box-shadow: inset -1px -1px 6px #3a3101, inset 1px 1px 8px #fff;
 }
-.sparkle span{
+
+.sparkle span {
   display: block;
   position: absolute;
   font-size: 20px;
@@ -411,39 +439,49 @@ a:hover {
   color: #fff;
   animation: startSpa 1.5s ease infinite alternate;
 }
+
 @keyframes startSpa {
-  0%,100%{
+
+  0%,
+  100% {
     transform: scale(1);
   }
-  50%{
+
+  50% {
     transform: scale(1.5);
   }
 }
-.sparkle span:nth-child(1){
+
+.sparkle span:nth-child(1) {
   left: 30%;
   top: 40%;
 }
-.sparkle span:nth-child(2){
+
+.sparkle span:nth-child(2) {
   left: 40%;
   top: 27%;
   font-size: 15px;
 }
-.sparkle span:nth-child(3){
+
+.sparkle span:nth-child(3) {
   left: 50%;
   top: 40%;
   font-size: 12px;
 }
-.sparkle span:nth-child(4){
+
+.sparkle span:nth-child(4) {
   left: 70%;
   top: 67%;
   font-size: 14px;
 }
-.sparkle span:nth-child(5){
+
+.sparkle span:nth-child(5) {
   left: 74%;
   top: 13%;
   font-size: 16px;
 }
-.blink div{
+
+.blink div {
   width: 3px;
   height: 3px;
   background: #fff;
@@ -452,50 +490,60 @@ a:hover {
   border-radius: 50%;
   animation: startBlink 1.5s ease infinite alternate;
 }
-.blink div:nth-child(2){
+
+.blink div:nth-child(2) {
   left: 34%;
   top: 13%;
   transform: scale(1.2);
 }
-.blink div:nth-child(3){
+
+.blink div:nth-child(3) {
   left: 54%;
   top: 43%;
   transform: scale(0.6);
 }
-.blink div:nth-child(4){
+
+.blink div:nth-child(4) {
   left: 64%;
   top: 33%;
   transform: scale(1.4);
 }
-.blink div:nth-child(5){
+
+.blink div:nth-child(5) {
   left: 34%;
   top: 63%;
   transform: scale(1.8);
 }
-.blink div:nth-child(6){
+
+.blink div:nth-child(6) {
   left: 14%;
   top: 76%;
   transform: scale(1.5);
 }
+
 @keyframes startBlink {
-  0%{
+  0% {
     box-shadow: 0 0 0 0 #fff;
   }
-  25%{
+
+  25% {
     box-shadow: 0 0 1px 1px #fff;
   }
-  50%{
+
+  50% {
     box-shadow: 0 0 2px 2px #fff;
   }
-  75%{
+
+  75% {
     box-shadow: 0 0 3px 3px #fff;
   }
-  100%{
+
+  100% {
     box-shadow: 0 0 4px 4px #fff;
   }
 }
 
-.snowfield{
+.snowfield {
   width: 100%;
   height: 7%;
   background-color: #fdfdff;
@@ -503,7 +551,8 @@ a:hover {
   bottom: 0;
   left: 0;
 }
-.snowfield span{
+
+.snowfield span {
   width: 100px;
   height: 60px;
   position: absolute;
@@ -512,48 +561,56 @@ a:hover {
   background-color: #fff;
   border-radius: 50%;
 }
-.snowfield span:nth-child(2){
+
+.snowfield span:nth-child(2) {
   left: 15%;
   top: -17px;
   transform: scale(1.3);
 }
-.snowfield span:nth-child(3){
+
+.snowfield span:nth-child(3) {
   left: 15%;
   top: -17px;
   transform: scale(1.3);
 }
-.snowfield span:nth-child(4){
+
+.snowfield span:nth-child(4) {
   left: 70%;
   top: -17px;
   transform: scale(1.5);
 }
-.snowfield span:nth-child(5){
+
+.snowfield span:nth-child(5) {
   left: 95%;
   top: -9px;
   transform: scale(1.8);
 }
-.snowfield span:nth-child(6){
+
+.snowfield span:nth-child(6) {
   left: 35%;
   top: -10px;
   transform: scale(1.4);
   border-top-right-radius: 60px;
   border-top-left-radius: 150px;
 }
-.snowfield span:nth-child(7){
+
+.snowfield span:nth-child(7) {
   left: 45%;
   top: -7px;
   transform: scale(1.1);
   border-top-right-radius: 40px;
   border-top-left-radius: 150px;
 }
-.snowfield span:nth-child(8){
+
+.snowfield span:nth-child(8) {
   left: 55%;
   top: -7px;
   transform: scale(1.4);
   border-top-right-radius: 150px;
   border-top-left-radius: 30px;
 }
-.snowfield span:nth-child(9){
+
+.snowfield span:nth-child(9) {
   left: 65%;
   top: -3px;
   transform: scale(1.4);
@@ -562,3 +619,183 @@ a:hover {
 }
 
 
+
+/* 雪人 */
+.snowman-box {
+  height: 510px;
+  width: 350px;
+  position: absolute;
+  margin: auto;
+  left: 100px;
+  bottom: -100px;
+  transform: scale(0.6);
+}
+
+.snowman {
+  position: relative;
+  left: 5px;
+  top: 53px;
+}
+
+.face {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 110px;
+}
+
+.eyel,
+.eyer {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+
+}
+
+.eyel {
+  top: 40px;
+  left: 35px;
+}
+
+.eyer {
+  top: 25px;
+  left: 75px;
+}
+
+.nose {
+  height: 0;
+  width: 0;
+  border-top: 30px solid #f7880f;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  position: relative;
+  top: 35px;
+  left: 57px;
+
+}
+
+.hat {
+  background-color: #2b303a;
+  height: 10px;
+  width: 120px;
+  position: relative;
+  bottom: 50px;
+  left: 15px;
+  border-radius: 4px;
+  transform: rotate(20deg);
+}
+
+.htop {
+  height: 0;
+  width: 60px;
+  border-bottom: 43px solid #2b303a;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: relative;
+  bottom: 42px;
+  left: 22px;
+}
+
+.body {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  top: 90px;
+  left: 70px;
+}
+
+.buttons {
+  position: relative;
+  top: 60px;
+  left: 90px;
+}
+
+.b1,
+.b2,
+.b3 {
+  height: 15px;
+  width: 15px;
+  background-color: #2b303a;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.handl {
+  background-color: #84382a;
+  height: 5px;
+  width: 100px;
+  position: relative;
+  bottom: 68px;
+  transform: rotate(25deg);
+  right: 67px;
+}
+
+.s1 {
+  background-color: #84382a;
+  height: 5px;
+  width: 30px;
+  position: relative;
+  bottom: 10px;
+  transform: rotate(45deg);
+  right: 5px;
+}
+
+.handr {
+  background-color: #84382a;
+  height: 5px;
+  width: 100px;
+  position: relative;
+  bottom: 73px;
+  transform: rotate(-25deg);
+  left: 168px;
+}
+
+.s2 {
+  background-color: #84382a;
+  height: 5px;
+  width: 30px;
+  position: relative;
+  bottom: 10px;
+  transform: rotate(-45deg);
+  left: 65px;
+}
+
+.scarf {
+  height: 0;
+  width: 20px;
+  border-bottom: 50px solid red;
+  border-left: 8px solid transparent;
+  position: relative;
+  bottom: 90px;
+  left: 195px;
+  transform: rotate(-15deg);
+}
+
+.sc1 {
+  background-color: red;
+  height: 35px;
+  width: 120px;
+  position: relative;
+  bottom: 35px;
+  right: 85px;
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+.sc2 {
+  height: 0px;
+  width: 20px;
+  border-bottom: 70px solid red;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: relative;
+  right: 25px;
+  bottom: 45px;
+}
