@@ -25,9 +25,11 @@ window.onload = function () {
     }
 
     const toggleTheme = document.querySelector('.toggle-theme')
+    const bingdundun = document.querySelector('#bingdundun')
     toggleTheme.onclick = function(){
         toggleTheme.classList.toggle('active')
         snows.classList.toggle('active')
+        bingdundun.classList.toggle('active')
     }
 
 }

@@ -193,7 +193,8 @@ a:hover {
   transform: translateX(-50%);
   animation: startTree 3.5s ease infinite alternate;
 }
-.star:hover{
+
+.star:hover {
   animation-play-state: paused;
 }
 
@@ -798,4 +799,388 @@ a:hover {
   position: relative;
   right: 25px;
   bottom: 45px;
+}
+
+
+#bingdundun.active .b-ear,
+#bingdundun.active .bl-hand,
+#bingdundun.active .bl-hand:after,
+#bingdundun.active .br-hand,
+#bingdundun.active .br-hand:after,
+#bingdundun.active .bl-foot,
+#bingdundun.active .bl-foot:after,
+#bingdundun.active .br-foot,
+#bingdundun.active .br-foot:after{
+  background: #000;
+}
+
+#bingdundun {
+  position: relative;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  height: 3.4rem;
+  width: 3rem;
+  transform: scale(3);
+}
+
+.b-body {
+  border: 0.06rem solid #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 55% 55% 55% 55% / 50% 50% 60% 60%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.b-ear {
+  width: .9rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: .2rem;
+  border: 0.06rem solid #000;
+  border-radius: 50% 60% 60% 50% / 50% 50% 50% 50%;
+  background: #fff;
+  z-index: 0;
+  transform: rotate(-20deg);
+}
+
+.br-ear {
+  right: .2rem;
+  left: auto;
+  transform: rotateY(180deg) rotate(-20deg);
+}
+
+.b-face1 {
+  width: 2.2rem;
+  height: 1.7rem;
+  border-radius: 60% 60% 50% 50% / 70% 70% 48% 48%;
+  border: 0.05rem solid #1c1f00;
+  position: absolute;
+  top: .45rem;
+  left: .4rem;
+  z-index: 1;
+}
+
+.b-face2 {
+  width: 2.28rem;
+  height: 1.78rem;
+  border-radius: 60% 60% 50% 50% / 70% 70% 48% 48%;
+  border: 0.04rem solid #335fe6;
+  position: absolute;
+  top: .41rem;
+  left: .36rem;
+  z-index: 1;
+}
+
+.b-face3 {
+  width: 2.34rem;
+  height: 1.84rem;
+  border-radius: 60% 60% 50% 50% / 70% 70% 48% 48%;
+  border: 0.03rem solid #ee39d3;
+  position: absolute;
+  top: .38rem;
+  left: .33rem;
+  z-index: 1;
+}
+
+.b-face4 {
+  width: 2.38rem;
+  height: 1.86rem;
+  border-radius: 60% 60% 50% 50% / 70% 70% 48% 48%;
+  border: 0.02rem solid #edf466;
+  position: absolute;
+  top: .36rem;
+  left: .31rem;
+  z-index: 1;
+}
+
+.b-face5 {
+  width: 2.4rem;
+  height: 1.88rem;
+  border-radius: 60% 60% 50% 50% / 70% 70% 48% 48%;
+  border: 0.02rem solid #6cf078;
+  position: absolute;
+  top: .34rem;
+  left: .29rem;
+  z-index: 1;
+}
+
+.bl-hand {
+  position: absolute;
+  z-index: 0;
+  width: .8rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: #fff;
+  top: 1rem;
+  left: -.5rem;
+  transform: rotate(-15deg);
+}
+
+.bl-hand:after {
+  position: absolute;
+  content: '';
+  width: 1.3rem;
+  height: .8rem;
+  background: #fff;
+  border-radius: 50%;
+  transform: rotate(35deg);
+  top: 0.71rem;
+}
+
+.br-hand {
+  position: absolute;
+  z-index: 0;
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+  background: #fff;
+  right: -.5rem;
+  top: 2.2rem;
+}
+
+.br-hand:after {
+  position: absolute;
+  background: #fff;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: -0.24rem;
+  left: -0.26rem;
+  content: '';
+  transform: rotate(-47deg);
+  border-radius: 0 0 0 80%;
+}
+
+.bl-foot {
+  position: absolute;
+  background: #fff;
+  width: .9rem;
+  height: .9rem;
+  top: 3rem;
+  left: .3rem;
+  border-radius: 50%;
+}
+
+.bl-foot:after {
+  position: absolute;
+  z-index: 0;
+  height: .9rem;
+  width: .9rem;
+  content: '';
+  background: #fff;
+  top: -0.45rem;
+  transform: rotate(12deg);
+  left: 0.1rem;
+  border-radius: 0 50% 50% 0;
+}
+
+.br-foot {
+  position: absolute;
+  background: #fff;
+  width: .9rem;
+  height: .9rem;
+  top: 3rem;
+  right: .3rem;
+  border-radius: 50%;
+}
+
+.br-foot:after {
+  position: absolute;
+  z-index: 0;
+  height: .9rem;
+  width: .9rem;
+  content: '';
+  background: #fff;
+  top: -0.45rem;
+  transform: rotate(-12deg);
+  right: 0.1rem;
+  border-radius: 0 0 0 50%;
+}
+
+.bl-eye {
+  position: absolute;
+  width: 0.6rem;
+  height: .8rem;
+  top: 0.8rem;
+  left: 0.65rem;
+  background: #000;
+  z-index: 2;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.bl-eye:after,
+.br-eye:after {
+  position: absolute;
+  width: .3rem;
+  height: .3rem;
+  border: .03rem solid #fff;
+  border-radius: 50%;
+  content: '';
+  top: .1rem;
+  left: .15rem;
+}
+
+.br-eye:after {
+  left: auto;
+  right: .15rem;
+}
+
+.bl-eye:before,
+.br-eye:before {
+  top: .23rem;
+  left: .22rem;
+  position: absolute;
+  width: .1rem;
+  height: .1rem;
+  background: #fff;
+  border-radius: 50%;
+  content: '';
+}
+
+.br-eye:before {
+  left: 0.22rem;
+  top: 0.18rem;
+}
+
+.br-eye {
+  position: absolute;
+  width: 0.6rem;
+  height: .8rem;
+  top: 0.8rem;
+  right: 0.65rem;
+  background: #000;
+  z-index: 2;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+}
+
+.b-mouth {
+  border: 0.05rem solid #000;
+  position: absolute;
+  top: 1.3rem;
+  width: 1rem;
+  height: 0.5rem;
+  z-index: 1;
+  left: 50%;
+  margin-left: -0.5rem;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  border-top: none;
+}
+
+.b-mouth:after,
+.b-mouth:before {
+  position: absolute;
+  content: '';
+  width: .5rem;
+  background: #fff;
+  height: 0.5rem;
+  top: -0.15rem;
+  transform: rotate(45deg);
+}
+
+.b-mouth:after {
+  left: -0.21rem;
+}
+
+.b-mouth:before {
+  right: -0.21rem;
+}
+
+.b-mouth-dot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.b-mouth-dot:after,
+.b-mouth-dot:before {
+  position: absolute;
+  top: .333rem;
+  width: 0.05rem;
+  height: 0.05rem;
+  border-radius: 50%;
+  background: #000;
+  content: '';
+}
+
+.b-mouth-dot:after {
+  left: .113rem;
+}
+
+.b-mouth-dot:before {
+  right: .113rem;
+}
+
+.b-nose {
+  background: #000;
+  width: .3rem;
+  height: .3rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.15rem;
+  top: 1.25rem;
+  z-index: 1;
+  transform: rotate(50deg) skewY(-10deg);
+  border-radius: 30%;
+}
+
+.b-nose:after {
+  width: 0.352rem;
+  height: 0.36rem;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  border-top: 0.1rem solid #fff;
+  top: -0.07rem;
+  transform: rotate(-45deg) skewY(0deg);
+  left: -0.017rem;
+}
+
+.b-heart {
+  width: .5rem;
+  height: .5rem;
+  position: absolute;
+  top: 1.25rem;
+  left: -.32rem;
+  z-index: 2;
+}
+
+.b-heart:before,
+.b-heart:after {
+  content: "";
+  position: absolute;
+  width: .12rem;
+  height: .2rem;
+  background-color: red;
+  border-radius: .2rem .2rem 0 0;
+  top: 0;
+}
+
+.b-heart:before {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.b-heart:after {
+  transform: rotate(45deg);
+  right: .32rem;
+}
+
+.b-logo {
+  background-image: url("./dongao.png");
+  background-repeat: no-repeat;
+  width: .5rem;
+  position: absolute;
+  height: .8rem;
+  z-index: 2;
+  background-size: contain;
+  top: 2.45rem;
+  left: 50%;
+  margin-left: -0.25rem;
 }
